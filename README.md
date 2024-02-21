@@ -1,8 +1,34 @@
-# React + Vite
+# React Star Rating
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple React component for creating star ratings. Users can click on stars to rate items, and the component visually represents the selected rating.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Displays star icons for rating.
+- Allows users to click on stars to select a rating.
+- Updates the display to show the selected rating.
+
+## Getting Started
+
+To use this star rating component in your project, follow these steps:
+
+1. Copy the `StarRating.jsx` file into your project directory.
+2. Import the `StarRating` component into your React application.
+3. Render the `StarRating` component with the desired number of stars as a prop.
+
+## Example Usage
+
+```javascript
+import React from 'react';
+import StarRating from './StarRating';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Star Rating</h1>
+      <StarRating noOfStars={5} />
+    </div>
+  );
+}
+
+export default App;
